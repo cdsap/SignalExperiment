@@ -18,6 +18,7 @@ plugins {
   id("com.squareup.wire")
   id("translations")
   id("licenses")
+  id("io.github.cdsap.r8booster") version "0.0.5"
 }
 
 apply(from = "static-ips.gradle.kts")
