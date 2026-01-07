@@ -7,6 +7,7 @@ on:
     - 'main'
     - '7.**'
     - 'test2'
+    - 'r8'
 
 permissions:
   contents: read # to fetch code (actions/checkout)
@@ -38,7 +39,7 @@ jobs:
         collect_gc: true
 
     - name: Build with Gradle
-      run: ./gradlew assemblePlayProdRelease
+      run: ./gradlew test
       env:
         DEVELOCITY_ACCESS_KEY: ${{ secrets.DV_ACCESS_KEY }}
   
