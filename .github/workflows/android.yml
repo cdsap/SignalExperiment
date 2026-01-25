@@ -39,7 +39,7 @@ jobs:
         collect_gc: true
 
     - name: Build with Gradle
-      run: ./gradlew assemble
+      run: ./gradlew clean assemblePlayProdRelease
       env:
         DEVELOCITY_ACCESS_KEY: ${{ secrets.DV_ACCESS_KEY }}
   
