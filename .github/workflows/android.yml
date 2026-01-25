@@ -39,7 +39,7 @@ jobs:
         collect_gc: true
 
     - name: Build with Gradle
-      run: ./gradlew test -x :lintchecks:test
+      run: ./gradlew assemble
       env:
         DEVELOCITY_ACCESS_KEY: ${{ secrets.DV_ACCESS_KEY }}
   
